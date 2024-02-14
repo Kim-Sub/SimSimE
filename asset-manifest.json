@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SimSimE/static/css/main.f6f927b5.css",
+    "main.js": "/SimSimE/static/js/main.bfce9d5c.js",
+    "index.html": "/SimSimE/index.html",
+    "main.f6f927b5.css.map": "/SimSimE/static/css/main.f6f927b5.css.map",
+    "main.bfce9d5c.js.map": "/SimSimE/static/js/main.bfce9d5c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6f927b5.css",
+    "static/js/main.bfce9d5c.js"
+  ]
+}
