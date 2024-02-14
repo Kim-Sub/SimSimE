@@ -1,0 +1,141 @@
+// 본문 폰트 IBM Plex Sans KR // font-family: 'IBM Plex Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;300;400;600;800;900&display=swap');
+// H1 영어 폰트 (only 대문자) // font-family: 'Ysabeau SC', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;200;300;400;500;600;900&display=swap');
+// 상단 네비 폰트 (날림 폰트) //  font-family: 'Dai Banna SIL', serif;
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@400;600;700&display=swap');
+
+
+//공통 클래스
+.originPosition{transform: translateY(0px) translateX(0px) scale(1) !important;}
+.originVisible {visibility: visible; opacity: 1 !important;}
+.transPosition{transform: translateY(500px) scale(.5); transition: .5s;}
+.flexC{display: flex; justify-content: center; align-items: center; flex-direction: column;}
+
+// 텍스트 태그
+
+
+//호버시 어두워지는 박스커버
+.BoxCover{
+   position: absolute; top: 0; left: 0; z-index: 10; cursor: pointer;
+   width: 100%; height: 100%; transition: .5s; opacity: 0;
+   &:hover{background: rgb(0, 0, 0, .5); opacity: 1; }
+}
+
+// 스크롤바 설정
+::-webkit-scrollbar{width: 0px;}
+
+
+//컬러 팔레트
+$menuBack : #54635cde ;
+$softBack : #0a3d273b ;
+$textHover : #db321c ;
+$gray: #333 ;
+
+$boxShadow : rgba(0, 0, 0, 0.08) 0px 4px 12px; 
+
+
+
+
+body{ // 전체 바탕색
+   width: 100vw; height: fit-content ;background: whitesmoke; overflow: hidden;
+   font-family: 'IBM Plex Sans KR', sans-serif; line-height: 2; letter-spacing: 1.2px;
+   font-size: 18px; 
+}
+#App{
+   width: 100vw; height: 100vh; 
+   .MainMessage{
+      position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);
+      font-size: 30px;
+   }
+}
+
+
+
+// ■■■■■ 문서 시작 ■■■■■
+// ■■■■■ nav ■■■■■
+#NavGame{
+   position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);
+   width: 60vw; height: 80vh; padding: 10px; box-sizing: border-box;
+   background: #48588d; z-index: 100;  transition: .7s ease-in-out;
+   cursor: pointer;
+   // 맥 스타일 박스 쉐도우
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+   >ul{
+      width: 100%; height: 100%;
+      display: flex; flex-wrap: wrap; justify-content: center;
+      li{
+         position: relative; width: 30%; height: 30%; box-sizing: border-box;
+         font-family: 'Ysabeau SC', sans-serif; font-size: 28px; text-align: center; font-weight: 600;
+         &.logo{}
+         
+         .active::before {
+            content: ""; position: absolute; top: 50%; left: 100%;
+            border-width: 10px; border-style: solid; border-color:  transparent lavender transparent transparent ;
+            margin-top: -10px; 
+          }
+         &:hover a{
+            color: lavender; border-bottom: 1px solid lavender; font-weight: bold;
+            transform: scale(1.2);
+           }
+         a{
+            width: 100%; height: 100%;
+            display: flex; justify-content: center; align-items: center; 
+         }
+      }
+   }
+   p{line-height:1.5; margin-top: 10px;}
+}
+
+// ■■■■■ Game1 ■■■■■
+#Game1{
+   width: 100vw; height: 100vh;
+}
+
+// ■■■■■ Game3 ■■■■■
+#Game3{
+
+}
+
+
+// ■■■■■ Game4 ■■■■■
+#Game4{
+
+}
+
+// ■■■■■ Game7 ■■■■■
+#Game7{
+
+}
+
+
+
+// ■■■■■ Game8 ■■■■■
+#Game8{
+
+}
+
+
+
+
+// ─────────────────── 반응형 미디어 쿼리 ───────────────────
+// ─────────────────── 반응형 미디어 쿼리 ───────────────────
+
+
+
+// px에 따른 환경
+@media screen and (max-width: 1700px){
+   body{overflow:none}
+}
+
+
+// 호버가 가능한 환경 : 즉 pc를 의미
+@media (hover: hover) {
+   body {overflow: hidden;}
+}
+
+
+
+@media only screen and (max-device-width: 1284px) {
+
+}
